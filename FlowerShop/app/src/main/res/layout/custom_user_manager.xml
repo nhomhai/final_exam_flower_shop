@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="130dp"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="0dp">
+
+        <ImageView
+            android:id="@+id/imageView8"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="17dp"
+            app:srcCompat="@drawable/usr" />
+
+        <TextView
+            android:id="@+id/textView_id_usermanager"
+            android:layout_width="200dp"
+            android:layout_height="40dp"
+            android:layout_alignParentEnd="true"
+            android:layout_alignTop="@+id/imageView8"
+            android:layout_marginEnd="88dp"
+            android:text="TextView"
+            android:textColor="@android:color/holo_red_light"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/textView_name_usermanager"
+            android:layout_width="200dp"
+            android:layout_height="40dp"
+            android:layout_alignParentTop="true"
+            android:layout_alignStart="@+id/textView_id_usermanager"
+            android:layout_marginTop="68dp"
+            android:text="TextView"
+            android:textColor="@android:color/holo_red_light"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/button_show_info"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="-88dp"
+            android:layout_toEndOf="@+id/textView_id_usermanager"
+            android:background="@android:drawable/ic_menu_gallery"
+            android:onClick="show_info"
+            tools:layout_editor_absoluteX="323dp"
+            tools:layout_editor_absoluteY="68dp" />
+
+        <Button
+            android:id="@+id/button_delete_info"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_centerVertical="true"
+            android:layout_toEndOf="@+id/button_show_info"
+            android:background="@android:drawable/ic_delete"
+            android:onClick="delete_info" />
+    </RelativeLayout>
+
+
+</android.support.constraint.ConstraintLayout>

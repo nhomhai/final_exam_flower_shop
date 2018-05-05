@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        tools:layout_editor_absoluteX="8dp"
+        tools:layout_editor_absoluteY="8dp">
+
+        <TextView
+            android:id="@+id/textView_userid_customorder"
+            android:layout_width="280dp"
+            android:layout_height="40dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginStart="22dp"
+            android:layout_marginTop="16dp"
+            android:text="TextView" />
+
+        <TextView
+            android:id="@+id/textView_key_customorder"
+            android:layout_width="280dp"
+            android:layout_height="40dp"
+            android:layout_alignStart="@+id/textView_userid_customorder"
+            android:layout_below="@+id/textView_userid_customorder"
+            android:text="TextView" />
+
+        <Button
+            android:id="@+id/button_delete_customorder"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_alignParentEnd="true"
+            android:layout_below="@+id/textView_userid_customorder"
+            android:layout_marginEnd="24dp"
+            android:background="@android:drawable/btn_dialog"
+            android:onClick="delete" />
+
+        <Button
+            android:id="@+id/button_detail_customorder"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_below="@+id/textView_userid_customorder"
+            android:layout_toStartOf="@+id/button_delete_customorder"
+            android:background="?android:attr/actionModeFindDrawable"
+            android:onClick="show" />
+    </RelativeLayout>
+</android.support.constraint.ConstraintLayout>

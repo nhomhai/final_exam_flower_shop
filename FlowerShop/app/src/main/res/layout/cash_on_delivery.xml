@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginBottom="10dp"
+        tools:layout_editor_absoluteX="8dp"
+        tools:layout_editor_absoluteY="8dp">
+
+        <ImageView
+            android:id="@+id/imageView6"
+            android:layout_width="wrap_content"
+            android:layout_height="200dp"
+            app:srcCompat="@drawable/cash" />
+
+        <EditText
+            android:id="@+id/editText_name_cash"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="214dp"
+            android:ems="10"
+            android:hint="Recipient's name "
+            android:inputType="textPersonName" />
+
+        <EditText
+            android:id="@+id/editText_address_cash"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:ems="10"
+            android:hint="Recipient's address"
+            android:inputType="textPersonName" />
+
+        <EditText
+            android:id="@+id/editText_phone_cash"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="215dp"
+            android:ems="10"
+            android:hint="Recipient's phone "
+            android:inputType="number" />
+
+        <Button
+            android:id="@+id/button_accept_cash"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:onClick="accept"
+            android:text="ACCEPT"
+            android:textSize="16sp" />
+
+    </RelativeLayout>
+</android.support.constraint.ConstraintLayout>

@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.flowershop.flowershop">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/logo"
+        android:label="FlowerShop"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity
+            android:name=".MainActivity"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".about_us" />
+        <activity android:name=".manager_account" />
+        <activity android:name=".store_system"></activity>
+        <activity android:name=".login" />
+        <activity android:name=".Payment.visa_mastercard"></activity>
+        <activity android:name=".register" />
+        <activity android:name=".edit_info"></activity>
+        <activity android:name=".change_password" />
+        <activity android:name=".recent_order"></activity>
+        <activity android:name=".AdminPage.order_manager"></activity>
+        <activity android:name=".AdminPage.gallery_manager"></activity>
+        <activity android:name=".AdminPage.add_gallery"></activity>
+        <activity android:name="gallery"></activity>
+        <activity android:name=".AdminPage.edit_info_flower"></activity>
+        <activity android:name=".view_flower" />
+        <activity android:name=".forget_password" />
+        <activity android:name=".cash_on_delivery"></activity>
+        <activity android:name=".cart"></activity>
+        <activity android:name=".AdminPage.user_manager"></activity>
+        <activity android:name=".AdminPage.admin_manager" />
+        <activity android:name=".Payment.ATM"></activity>
+        <activity android:name=".Payment.ATM_Payment"></activity>
+        <activity android:name=".AdminPage.add_flower" />
+        <activity android:name=".AdminPage.flower_manager" />
+        <activity android:name=".Search"></activity>
+        <activity android:name=".Payment.visa_mastercard" />
+        <activity android:name=".login_home" />
+        <activity android:name=".login_view_flower" />
+    </application>
+
+</manifest>

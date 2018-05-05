@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="0dp"
+        tools:ignore="MissingConstraints">
+
+        <ImageView
+            android:id="@+id/imageView_testview_image"
+            android:layout_width="180dp"
+            android:layout_height="200dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="10dp" />
+
+        <TextView
+            android:id="@+id/textView_testview_name"
+            android:layout_width="180dp"
+            android:layout_height="25dp"
+            android:layout_alignStart="@+id/imageView_testview_image"
+            android:layout_below="@+id/imageView_testview_image"
+            android:gravity="center"
+            android:text="TextView"
+            android:textColor="#F44336"
+            android:textSize="18sp"
+            android:textStyle="bold|italic" />
+
+        <TextView
+            android:id="@+id/textView_testview_price"
+            android:layout_width="180dp"
+            android:layout_height="20dp"
+            android:layout_alignStart="@+id/textView_testview_name"
+            android:layout_below="@+id/textView_testview_name"
+            android:gravity="center"
+            android:text="TextView"
+            android:textColor="#F44336"
+            android:textSize="14sp"
+            android:textStyle="bold|italic" />
+
+        <Button
+            android:id="@+id/button_testview_detail"
+            android:layout_width="140dp"
+            android:layout_height="40dp"
+            android:layout_alignStart="@+id/imageView_testview_image"
+            android:layout_below="@+id/textView_testview_price"
+            android:background="#C5CAE9 "
+            android:onClick="detail"
+            android:text="detail" />
+
+        <Button
+            android:id="@+id/button_testview_addtocart"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_alignEnd="@+id/imageView_testview_image"
+            android:layout_below="@+id/textView_testview_price"
+            android:background="@drawable/addtocart"
+            android:onClick="add_to_cart" />
+
+    </RelativeLayout>
+</android.support.constraint.ConstraintLayout>

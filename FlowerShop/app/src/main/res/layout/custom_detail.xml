@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="580dp"
+        android:background="@drawable/bac"
+        tools:layout_editor_absoluteX="3dp"
+        tools:layout_editor_absoluteY="8dp">
+
+        <ImageView
+            android:id="@+id/imageView_img_customdetail"
+            android:layout_marginTop="20dp"
+            android:layout_width="200dp"
+            android:layout_height="225dp"
+            android:layout_marginLeft="20dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true" />
+
+        <TextView
+            android:id="@+id/textView_name_customdetail"
+            android:layout_width="195dp"
+            android:layout_height="46dp"
+            android:layout_alignParentTop="true"
+            android:layout_toEndOf="@+id/imageView_img_customdetail"
+            android:textAlignment="center"
+            android:textColor="#2196F3 "
+            android:textSize="18sp"
+            android:layout_marginTop="20dp"
+            android:layout_marginRight="20dp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/textView_price_customdetail"
+            android:layout_width="195dp"
+            android:layout_height="46dp"
+            android:layout_below="@+id/textView_name_customdetail"
+            android:layout_toEndOf="@+id/imageView_img_customdetail"
+            android:textAlignment="center"
+            android:textColor="#2196F3 "
+            android:layout_marginRight="20dp"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/textView_species_customdetail"
+            android:layout_width="195dp"
+            android:layout_height="50dp"
+            android:layout_below="@+id/textView_price_customdetail"
+            android:layout_toEndOf="@+id/imageView_img_customdetail"
+            android:textAlignment="center"
+            android:textColor="#2196F3 "
+            android:textSize="18sp"
+            android:layout_marginRight="20dp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/textView_status_customdetail"
+            android:layout_width="195dp"
+            android:layout_height="46dp"
+            android:layout_below="@+id/textView_species_customdetail"
+            android:layout_toEndOf="@+id/imageView_img_customdetail"
+            android:textAlignment="center"
+            android:textColor="#2196F3 "
+            android:layout_marginRight="20dp"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+
+        <TextView
+            android:id="@+id/describe"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginStart="14dp"
+            android:layout_marginTop="265dp"
+            android:text="Describe:"
+            android:textColor="#2196F3 "
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/textView_detail_customdetail"
+            android:layout_width="370dp"
+            android:layout_height="230dp"
+            android:layout_below="@+id/describe"
+            android:layout_centerHorizontal="true"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:paddingTop="10dp"
+            android:textColor="#2196F3 "
+            android:textSize="16sp" />
+
+        <Button
+            android:id="@+id/button_dissmiss"
+            android:layout_width="370dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/textView_detail_customdetail"
+            android:layout_centerHorizontal="true"
+            android:background="#90CAF9 "
+            android:text="BACK"
+            android:onClick="Back"
+            android:textColor="@android:color/holo_red_light"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+    </RelativeLayout>
+</android.support.constraint.ConstraintLayout>

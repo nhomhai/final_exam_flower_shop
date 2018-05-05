@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="395dp"
+        android:layout_height="587dp"
+        tools:layout_editor_absoluteX="8dp"
+        tools:layout_editor_absoluteY="8dp">
+
+        <Button
+            android:id="@+id/button_add_addpicture"
+            android:layout_width="190dp"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/button_back_addpicture"
+            android:layout_toEndOf="@+id/button_back_addpicture"
+            android:onClick="add"
+            android:text="ADD" />
+
+        <EditText
+            android:id="@+id/editText_picturename"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="100dp"
+            android:ems="10"
+            android:hint="Name of picture"
+            android:inputType="textPersonName" />
+
+        <Button
+            android:id="@+id/button_back_addpicture"
+            android:layout_width="199dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="165dp"
+            android:onClick="back"
+            android:text="Back" />
+    </RelativeLayout>
+</android.support.constraint.ConstraintLayout>

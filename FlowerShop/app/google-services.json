@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "205226191650",
+    "firebase_url": "https://flower-db.firebaseio.com",
+    "project_id": "flower-db",
+    "storage_bucket": "flower-db.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:205226191650:android:8ad1d87a5aa4f96e",
+        "android_client_info": {
+          "package_name": "com.flowershop.flowershop"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "205226191650-d7fudkolgf755m2ertomsu2ovpmb3j38.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.flowershop.flowershop",
+            "certificate_hash": "a0568101a89499e96ec7118ad6ec8cb563e11f9c"
+          }
+        },
+        {
+          "client_id": "205226191650-sg5qu8u9g3tghk4931tv9f31g96edlv3.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDcl3YOVZBoaB-ersdVUvsIxWuswXoptoQ"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "205226191650-sg5qu8u9g3tghk4931tv9f31g96edlv3.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="@drawable/bac"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:layout_editor_absoluteX="8dp"
+        tools:layout_editor_absoluteY="8dp">
+        <TextView
+            android:id="@+id/textView98"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:background="#42A5F5"
+            android:gravity="center"
+            android:text="ORDER MANAGER"
+            android:textColor="#FF8A80"
+            android:textSize="27dp"
+            android:textStyle="bold"
+            tools:ignore="MissingConstraints"
+            tools:layout_editor_absoluteX="6dp"
+            tools:layout_editor_absoluteY="2dp" />
+
+        <ListView
+            android:id="@+id/listview_order_manager"
+            android:layout_width="match_parent"
+            android:layout_height="500dp"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/textView98" />
+
+        <Button
+            android:id="@+id/button_back_ordermanager"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/listview_order_manager"
+            android:onClick="back"
+            android:text="BACK" />
+
+    </RelativeLayout>
+</android.support.constraint.ConstraintLayout>
